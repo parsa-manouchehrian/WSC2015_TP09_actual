@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp1.WinSponsor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="WinSponsor" Height="550" Width="800" FontFamily="Arial">
+    <Canvas>
+        <Rectangle Height="55" Fill="#FF424242" Width="800"/>
+        <Label Foreground="White" FontSize="30" Content="Marathon Skills 2015" Canvas.Left="109" Canvas.Top="5"/>
+
+        <Rectangle Height="44" Fill="#FF424242" Width="800" Canvas.Left="-1" Canvas.Top="490"/>
+        <Label Content="" Foreground="White" Name="lblTimer" Canvas.Left="256" Canvas.Top="495"/>
+        <Button Name="back" Click="back_Click" Content="Back" Canvas.Left="24" Canvas.Top="16" Height="24" Width="65"/>
+        <Label Foreground="Gray" FontSize="20
+               " Content="Sponsor a runner" Canvas.Left="330" Canvas.Top="89"/>
+        <Label Foreground="Gray" FontSize="20                " Content="Sponsor a runner" Canvas.Left="56" Canvas.Top="153"/>
+        <Label Content="Your Name:" Canvas.Left="37" Canvas.Top="207"/>
+        <TextBox Canvas.Left="115" TextWrapping="Wrap" Name="txtFullName" Text="" Canvas.Top="211" Width="185"/>
+        <Label Content="Runner: " Canvas.Left="56" Canvas.Top="236"/>
+        <ComboBox Canvas.Left="115" Name="runner" Canvas.Top="238" Width="185"></ComboBox>
+        <Label Content="Name on Card:" Canvas.Left="19" Canvas.Top="269"/>
+        <TextBox Canvas.Left="115" TextWrapping="Wrap" x:Name="txtNameOnCard" Text="" Canvas.Top="273" Width="185"/>
+        <Label Content="Credit Card:" Canvas.Left="37" Canvas.Top="305"/>
+        <TextBox Canvas.Left="115" TextWrapping="Wrap" x:Name="txtCreditCard" Text="" Canvas.Top="309" Width="185"/>
+        <Label Content="Expiry Date:" Canvas.Left="37" Canvas.Top="339"/>
+        <TextBox Canvas.Left="115" TextWrapping="Wrap" x:Name="exDateM" Text="" Canvas.Top="343" Width="33"/>
+        <TextBox Canvas.Left="162" TextWrapping="Wrap" x:Name="exDateY" Text="" Canvas.Top="343" Width="59"/>
+        <Label Content="CVC:" Canvas.Left="37" Canvas.Top="370"/>
+        <TextBox Canvas.Left="115" TextWrapping="Wrap" x:Name="txtCVC" Text="" Canvas.Top="374" Width="33"/>
+        <Label Foreground="Gray" FontSize="20" Content="Charity" Canvas.Left="464" Canvas.Top="153"/>
+        <Label Content="Save the Children Fund" Canvas.Left="435" Canvas.Top="195"/>
+
+        <Label Foreground="Gray" FontSize="20" Content="Amount to donate" Canvas.Left="419" Canvas.Top="231"/>
+        <Label Foreground="Gray" FontSize="20" Content="$10" Name="lblAmount" Canvas.Left="481" Canvas.Top="269"/>
+        <TextBox ManipulationCompleted="txtAmount_ManipulationCompleted" Canvas.Left="470" TextWrapping="Wrap" x:Name="txtAmount" Text="" Canvas.Top="309" Width="76"/>
+        <Button Click="btnMinus_Click" Content="-" Name="btnMinus" Canvas.Left="440" Canvas.Top="307" Width="25"/>
+        <Button Content="+" x:Name="btnPlus" Canvas.Left="551" Canvas.Top="307" Width="25" Click="btnPlus_Click"/>
+        <Button Click="Button_Click" Content="Cancel" Canvas.Left="566" Canvas.Top="443" Width="79"/>
+        <Button Content="Pay now" Name="btnPay" Click="btnPay_Click" Canvas.Left="481" Canvas.Top="443" Width="79"/>
+        <Button Content="(i)" Foreground="#FFFDA70C" Canvas.Left="576" Canvas.Top="195" Height="24" Width="27" Click="Button_Click_1"/>
+
+    </Canvas>
+</Window>
