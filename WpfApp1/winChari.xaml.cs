@@ -20,7 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class winChari : Window
     {
-        public winChari()
+        public winChari() 
         {
             InitializeComponent();
             DispatcherTimer timer = new DispatcherTimer();
