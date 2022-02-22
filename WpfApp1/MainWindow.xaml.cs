@@ -58,6 +58,21 @@ namespace WpfApp1
             Close();
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            WinLogin main = new WinLogin();
+            main.Show();
+            Close();
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            WinCheck main = new WinCheck();
+            main.Show();
+            Close();
+        }
+
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
         //    using (var db = new MarathonDBEntities())

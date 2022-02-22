@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.WinContactInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Contact Information" Height="317" Width="576" ResizeMode="NoResize">
+    <Canvas>
+        <Label Foreground="Gray" FontSize="20" Content="Contact information" Canvas.Left="202" Canvas.Top="22"/>
+        <TextBlock Canvas.Left="158" Canvas.Top="76">
+            For more information about marathon skills, <LineBreak/>
+            please contact the coordicators using these contact details.
+        </TextBlock>
+        <Label Content="Phone:" FontWeight="Bold" Canvas.Left="58" Canvas.Top="151"/>
+        <Label Content="Email:" FontWeight="Bold" Canvas.Left="58" Canvas.Top="190"/>
+        <Label Content="+55 11 9988 77 66" Canvas.Left="112" Canvas.Top="151"/>
+        <Label Content="coordicators@marathonskills.org" Canvas.Left="112" Canvas.Top="190"/>
+
+    </Canvas>
+</Window>

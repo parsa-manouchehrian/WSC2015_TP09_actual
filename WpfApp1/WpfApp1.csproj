@@ -126,17 +126,44 @@
     <Compile Include="Volunteer.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="WinAdmin.xaml.cs">
+      <DependentUpon>WinAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="winChari.xaml.cs">
       <DependentUpon>winChari.xaml</DependentUpon>
     </Compile>
     <Compile Include="WinCharityInfo.xaml.cs">
       <DependentUpon>WinCharityInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinCheck.xaml.cs">
+      <DependentUpon>WinCheck.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WinConfirm.xaml.cs">
       <DependentUpon>WinConfirm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinContactInfo.xaml.cs">
+      <DependentUpon>WinContactInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinCoordinator.xaml.cs">
+      <DependentUpon>WinCoordinator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinEditProfile.xaml.cs">
+      <DependentUpon>WinEditProfile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="winFindOutMore.xaml.cs">
       <DependentUpon>winFindOutMore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinLogin.xaml.cs">
+      <DependentUpon>WinLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinRegisterEvent.xaml.cs">
+      <DependentUpon>WinRegisterEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinRunner.xaml.cs">
+      <DependentUpon>WinRunner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinRunnerRegister.xaml.cs">
+      <DependentUpon>WinRunnerRegister.xaml</DependentUpon>
     </Compile>
     <Compile Include="WinSponsor.xaml.cs">
       <DependentUpon>WinSponsor.xaml</DependentUpon>
@@ -153,6 +180,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WinAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="winChari.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,11 +192,43 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WinCheck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WinConfirm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WinContactInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinCoordinator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinEditProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="winFindOutMore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinRegisterEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinRunner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinRunnerRegister.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

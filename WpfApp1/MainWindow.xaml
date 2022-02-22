@@ -15,10 +15,10 @@
 " Content="Satuday September 5 2022" Canvas.Left="303" Canvas.Top="111"/>
 
 
-        <Button Content="I want to be a runner" Canvas.Left="256" Canvas.Top="191" Height="78" Width="289"/>
+        <Button Click="Button_Click_3" Content="I want to be a runner" Canvas.Left="256" Canvas.Top="191" Height="78" Width="289"/>
         <Button Click="Button_Click" Content="I want to sponsor a runner" Canvas.Left="256" Canvas.Top="287" Height="78" Width="289"/>
         <Button Click="Button_Click_1" Content="I want to findout more" Canvas.Left="256" Canvas.Top="386" Height="78" Width="289"/>
-        <Button Content="Login" Canvas.Left="667" Canvas.Top="445" Height="30" Width="105"/>
+        <Button Click="Button_Click_2" Content="Login" Canvas.Left="667" Canvas.Top="445" Height="30" Width="105"/>
         <Rectangle Height="50" Fill="#FF424242" Width="800" Canvas.Left="-1" Canvas.Top="490"/>
         <Label Content="" Foreground="White" Name="lblTimer" Canvas.Left="256" Canvas.Top="495"/>
 

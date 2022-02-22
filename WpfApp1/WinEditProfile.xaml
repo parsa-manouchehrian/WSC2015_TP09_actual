@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1.WinEditProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Edit Runner Profile" Height="550" Width="800" FontFamily="Arial">
+    <Canvas>
+        <Rectangle Height="55" Fill="#FF424242" Width="800"/>
+        <Label Foreground="White" FontSize="30" Content="Marathon Skills 2015" Canvas.Left="109" Canvas.Top="5"/>
+
+        <Rectangle Height="44" Fill="#FF424242" Width="800" Canvas.Left="-1" Canvas.Top="490"/>
+        <Label Content="" Foreground="White" Name="lblTimer" Canvas.Left="256" Canvas.Top="495"/>
+        <Button Name="back" Click="back_Click" Content="Back" Canvas.Left="24" Canvas.Top="16" Height="24" Width="65"/>
+
+        <Label Foreground="Gray" FontSize="20" Content="Edit your profile" Canvas.Left="307" Canvas.Top="87"/>
+
+        <Label Content="Email:" Canvas.Left="195" Canvas.Top="172"/>
+
+        <Label Content="Password:" Canvas.Left="539" Canvas.Top="206"/>
+        <PasswordBox x:Name="password" Width="161" Canvas.Left="610" Canvas.Top="210"/>
+        <Label Content="Password Again::" Canvas.Left="502" Canvas.Top="243"/>
+        <PasswordBox x:Name="rePassword" Width="161" Canvas.Left="610" Canvas.Top="247"/>
+        <Label Content="First Name:" Canvas.Left="167" Canvas.Top="205"/>
+        <TextBox x:Name="txtFirstname" TextWrapping="Wrap" Text="" Width="236" Canvas.Left="242" Canvas.Top="209"/>
+        <Label Content="Last Name:" Canvas.Left="167" Canvas.Top="247"/>
+        <TextBox x:Name="txtLastname" TextWrapping="Wrap" Text="" Width="236" Canvas.Left="242" Canvas.Top="251"/>
+        <Label Content="gender:" Canvas.Left="176" Canvas.Top="291"/>
+        <ComboBox Name="comboGender" Width="138" Canvas.Left="243" Canvas.Top="291">
+            <ComboBox.ItemTemplate>
+                <DataTemplate >
+                    <TextBlock Text="{Binding Gender1}"></TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Date of Birth:" Canvas.Left="161" Canvas.Top="325"/>
+        <DatePicker Name="birth" Canvas.Left="246" Canvas.Top="325" Width="135"/>
+        <Label Content="Country:" Canvas.Left="176" Canvas.Top="362"/>
+        <ComboBox x:Name="comboCountry" Width="138" Canvas.Left="243" Canvas.Top="362">
+            <ComboBox.ItemTemplate>
+                <DataTemplate >
+                    <TextBlock Text="{Binding CountryName}"></TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button Content="Cancel" Click="back_Click" Canvas.Left="511" Canvas.Top="413" Width="74"/>
+        <Button Content="Save" Click="Button_Click_1" Canvas.Left="431" Canvas.Top="413" Width="65"/>
+        <Label Name="lblEmail" Content="Email:" Foreground="Gray" Canvas.Left="243" Canvas.Top="172"/>
+        <Label Foreground="Gray" FontSize="16" Content="Change password" Canvas.Left="621" Canvas.Top="144"/>
+        <TextBlock Foreground="Gray" Canvas.Left="592" Canvas.Top="177">
+            Leave these fileds blank if you do not <LineBreak/> want to change the password.
+        </TextBlock>
+    </Canvas>
+</Window>
